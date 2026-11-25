@@ -43,13 +43,20 @@ header h1 {
     color: var(--main-theme-color);
 }
 
-header a:first-of-type {
-    text-decoration: none;
-    color: black;
-}
-
 .create-back-btn {
     font-weight: 600;
+
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    background-color: white;
+    color: black;
+
+    transition: all ease 0.1s;
+
+    &:hover {
+        opacity: 75%;
+    }
 }
 
 a {
