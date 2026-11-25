@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Test</title>
+    <title>Noface - Создать пост</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="index.php"><h1>POSTS</h1></a>
-            <a href="index.php">Назад</a>
+            <a href="index.php"><h1>Noface</h1></a>
+            <a class="create-back-btn" href="index.php">Назад</a>
         </header>
         <main class="create-post-main">
             <form class="post-create-container" method="POST" action="db.php">

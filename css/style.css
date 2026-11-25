@@ -1,9 +1,27 @@
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --open-sans: "Open Sans";
+
+    --main-theme-color: #00da78;
+    --background-color: #151515;
+    --container-color: #202020;
+}
+
 /* ALL PAGES */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: var(--open-sans);
+    color: white;
+}
+
+body, html {
+    background-color: var(--background-color);
 }
 
 .container {    
@@ -21,9 +39,21 @@ header {
     margin-top: 20px;
 }
 
+header h1 {
+    color: var(--main-theme-color);
+}
+
 header a:first-of-type {
     text-decoration: none;
     color: black;
+}
+
+.create-back-btn {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -38,6 +68,7 @@ header a:first-of-type {
 
 .post-list {
     width: 50%;
+    margin-top: 50px;
 }
 
 .post-container {
@@ -62,7 +93,7 @@ header a:first-of-type {
     width: 75%;
     margin: 0 auto;
 
-    background-color: white;
+    background-color: var(--container-color);
     box-shadow: 0px 0px 50px 0px rgba(34, 60, 80, 0.3);
     border-radius: 20px;
 
@@ -77,15 +108,31 @@ header a:first-of-type {
     min-height: 200px;
     padding: 10px;
     resize: none;
+
+    background-color: var(--background-color);
+    border: none;
+    border-radius: 20px;
+
+    font-size: 16px;
+
+    margin-top: 5px;
 }
 
 .post-create-container h2 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .post-create-container button {
     width: 100%;
     padding: 5px 10px;
 
-    margin-top: 30px;
+    background-color: var(--main-theme-color);
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+
+    padding: 10px 15px;
+    margin-top: 40px;
 }

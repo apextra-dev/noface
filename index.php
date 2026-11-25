@@ -21,13 +21,13 @@
             $sql = "SELECT content, `created_at` FROM posts ORDER BY `created_at` DESC";
             $result = mysqli_query($connection, $sql);
         ?>
-    <title>Posts</title>
+    <title>Noface - Полностью анонимный форум</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="index.php"><h1>POSTS</h1></a>
-            <a href="create-post.php">Создать пост</a>
+            <a href="index.php"><h1>Noface</h1></a>
+            <a class="create-back-btn" href="create-post.php">Создать пост</a>
         </header>
         <main class="home-main">
             <section class="post-list">
@@ -38,7 +38,7 @@
                         </article>
                     <?php endwhile; ?>     
                 <?php else: ?>
-                    <center><p>Постов ещё нет</p></center>
+                    <center><p>Постов ещё нет... Станьте первым</p></center>
                 <?php endif; ?>
             </section>
         </main>
