@@ -21,7 +21,7 @@
 
     mysqli_set_charset($connection, 'utf8mb4');
 
-    $sql = "SELECT content, `created_at` FROM posts ORDER BY `created_at` DESC";
+    $sql = "SELECT content, created_at FROM posts ORDER BY created_at DESC";
     $result = mysqli_query($connection, $sql);
 ?>
 
@@ -42,10 +42,13 @@
         </header>
         <main class="home-main">
             <section class="post-list">
+                <center><h2>Посты</h2></center>
                 <?php if($result && mysqli_num_rows($result) != 0): ?>
                     <?php while($row = mysqli_fetch_assoc($result)): ?>
                         <article class="post-container">
-                            <p><?= nl2br(htmlspecialchars($row['content'], ENT_QUOTES, 'UTF-8'))?></p>
+                            <p><?= date("d.m.y", strtotime($row['created_at'])) ?></p>
+                            <h4><?= nl2br(htmlspecialchars($row['content'], ENT_QUOTES, 'UTF-8'))?></h4>
+
                         </article>
                     <?php endwhile; ?>     
                 <?php else: ?>

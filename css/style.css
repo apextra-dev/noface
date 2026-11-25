@@ -52,7 +52,7 @@ header h1 {
     background-color: white;
     color: black;
 
-    transition: all ease 0.1s;
+    transition: all ease 0.2s;
 
     &:hover {
         opacity: 75%;
@@ -64,7 +64,7 @@ a {
 }
 
 
-/* MAIN PAGE */
+/* HOME PAGE */
 
 .home-main {
     display: flex;
@@ -74,11 +74,15 @@ a {
 }
 
 .post-list {
-    width: 50%;
+    width: 75%;
     margin-top: 50px;
 }
 
-.post-list p {
+.post-list center h2 {
+    margin-bottom: 30px;
+}
+
+.post-list center {
     font-weight: 600;
 }
 
@@ -92,6 +96,17 @@ a {
 
     margin-top: 70px;
     margin-bottom: 70px;
+}
+
+.post-container p {
+    font-size: 12px;
+    color: #a9a9a9;
+    
+    margin-bottom: 10px;
+}
+
+.post-container h4 {
+    font-weight: 500;
 }
 
 
@@ -147,4 +162,14 @@ a {
 
     padding: 10px 15px;
     margin-top: 40px;
+
+    transition: all ease 0.2s;
+
+    &:hover {
+        opacity: 70%;
+    }
+
+    &:disabled {
+        opacity: 50%;
+    }
 }
