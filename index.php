@@ -1,29 +1,5 @@
-<?php 
-    if(!isset($_COOKIE['user_id'])) {
-        $uniqId = bin2hex(random_bytes(16));
-
-        setcookie('user_id', $uniqId, [
-            'expires' => time() + 86400 * 365,
-            'path' => '/',
-            'secure' => false, // ВРЕМЕННО FALSE!!!! ПОТОМ ПОМЕНЯТЬ НА TRUE
-            'httponly' => true, 
-            'samesite' => 'Lax',
-        ]);
-
-        $currentUserId = $uniqId;
-    } else {
-        $currentUserId = $_COOKIE['user_id'];
-    }
-?>
-
-<?php
-    require_once 'db.php';
-
-    mysqli_set_charset($connection, 'utf8mb4');
-
-    $sql = "SELECT content, created_at FROM posts ORDER BY created_at DESC";
-    $result = mysqli_query($connection, $sql);
-?>
+<?php require_once './db/load_posts.php' ?>
+<?php require_once './db/cookies.php' ?>
 
 <!DOCTYPE html>
 <html lang="ru">
