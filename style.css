@@ -1,0 +1,91 @@
+/* ALL PAGES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+header a:first-of-type {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* MAIN PAGE */
+
+.home-main {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.post-list {
+    width: 50%;
+}
+
+.post-container {
+    background-color: #e5e5e5;
+    box-shadow: 0px 0px 50px 0px rgba(34, 60, 80, 0.3);
+    border-radius: 20px;
+
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* CREATE POST */
+
+.create-post-main {
+    margin-top: 50px;
+}
+
+.post-create-container {
+    width: 75%;
+    margin: 0 auto;
+
+    background-color: white;
+    box-shadow: 0px 0px 50px 0px rgba(34, 60, 80, 0.3);
+    border-radius: 20px;
+
+    padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.post-create-container textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    resize: none;
+}
+
+.post-create-container h2 {
+    margin-bottom: 30px;
+}
+
+.post-create-container button {
+    width: 100%;
+    padding: 5px 10px;
+
+    margin-top: 30px;
+}
