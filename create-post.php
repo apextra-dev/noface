@@ -17,10 +17,11 @@
                 <h2>Создайте пост</h2>
 
                 <label>Текст поста</label>
-                <textarea name="text" placeholder="Введите текст..."></textarea>
-                <button type="submit">Опубликовать</button>
+                <textarea id="text" name="text" placeholder="Введите текст..."></textarea>
+                <button type="submit" id="publishButton" disabled>Опубликовать</button>
             </form>
         </main>
     </div>
+    <script src="./js/create-post.js"></script>
 </body>
 </html>
