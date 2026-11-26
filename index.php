@@ -18,12 +18,22 @@
         </header>
         <main class="home-main">
             <section class="post-list">
-                <center><h2>Посты</h2></center>
+                <center><h2>Главная</h2></center>
                 <?php if($result && mysqli_num_rows($result) != 0): ?>
                     <?php while($row = mysqli_fetch_assoc($result)): ?>
                         <article class="post-container">
                             <p><?= date("d.m.y", strtotime($row['created_at'])) ?></p>
-                            <h4><?= nl2br(htmlspecialchars($row['content'], ENT_QUOTES, 'UTF-8'))?></h4>
+                            <h3><?= nl2br(htmlspecialchars($row['post_topic'], ENT_QUOTES, 'UTF-8')) ?></h3>
+                            <h4><?= nl2br(htmlspecialchars($row['post_content'], ENT_QUOTES, 'UTF-8'))?></h4>
+
+                            <!-- <section class="post-like-section">
+                                <button id="post-like" class="post-like">
+                                    <svg class="like-icon" width="22" height="21" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1343 10.0054C18.4357 13.2502 14.1722 16.7513 10.9923 19C10.9923 19 3.60076 13.6072 1.85028 10.0054C0.260681 6.73455 1.19747 4.03954 2.24776 2.85048C3.29813 1.66142 4.46677 1.13251 6.0242 1.0107C8.34716 0.829011 10.9923 4.07702 10.9923 4.07702C10.9923 4.07702 13.6016 0.789293 15.9612 1.0107C17.5527 1.16004 18.7146 1.58687 19.7369 2.85048C21.128 4.57017 21.5255 7.34785 20.1343 10.0054Z"/>
+                                    </svg>
+                                </button>
+                                <p>0</p>
+                            </section> -->
 
                         </article>
                     <?php endwhile; ?>     
@@ -33,5 +43,6 @@
             </section>
         </main>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
