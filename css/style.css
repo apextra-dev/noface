@@ -109,7 +109,12 @@
     font-size: 18px;
 
     margin-top: 5px;
+}
+
+.post-top-limit {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
 }
 
 .post-text {
@@ -126,6 +131,12 @@
 
     margin-top: 5px;
 }
+
+.post-text-limit {
+    display: flex;
+    justify-content: end;
+}
+
 
 .post-content-text.short {
     display: -webkit-box;

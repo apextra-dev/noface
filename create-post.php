@@ -20,9 +20,11 @@
 
                 <label for="post-top">Заголовок поста</label>
                 <textarea class="post-top" name="post-top" id="post-top" placeholder="Тема поста..."></textarea>
+                <h6 id="post-top-limit" class="post-top-limit">0/200</h6>
 
                 <label for="text">Текст поста</label>
                 <textarea class="post-text" id="text" name="text" placeholder="Содержимое поста..."></textarea>
+                <h6 id="post-text-limit" class="post-text-limit">0/1500</h6>
 
                 <button type="submit" id="publishButton" disabled>Опубликовать</button>
             </form>
