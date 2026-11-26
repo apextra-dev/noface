@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Noface - Полностью анонимный форум</title>
 </head>
 <body>
@@ -24,7 +25,8 @@
                         <article class="post-container">
                             <p><?= date("d.m.y", strtotime($row['created_at'])) ?></p>
                             <h3><?= nl2br(htmlspecialchars($row['post_topic'], ENT_QUOTES, 'UTF-8')) ?></h3>
-                            <h4><?= nl2br(htmlspecialchars($row['post_content'], ENT_QUOTES, 'UTF-8'))?></h4>
+                            <h4 class="post-content-text"><?= nl2br(htmlspecialchars($row['post_content'], ENT_QUOTES, 'UTF-8'))?></h4>
+                            <button class="read-more-btn" style="display: none;">Читать дальше...</button>
 
                             <!-- <section class="post-like-section">
                                 <button id="post-like" class="post-like">

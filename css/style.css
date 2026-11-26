@@ -1,84 +1,3 @@
-/* Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-:root {
-    --open-sans: "Open Sans";
-
-    --main-theme-color: #00da78;
-    --background-color: #151515;
-    --container-color: #202020;
-}
-
-/* ALL PAGES */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    font-family: var(--open-sans);
-    color: white;
-}
-
-textarea::-webkit-scrollbar {
-    width: 14px;
-}
-
-textarea::-webkit-scrollbar-track {
-    background-color: transparent;
-    margin-block: 10px;
-}
-
-textarea::-webkit-scrollbar-thumb {
-    background-color: #ffff;
-    border-radius: 10px;
-
-    border: 4px solid transparent; 
-    background-clip: padding-box; 
-}
-
-body, html {
-    background-color: var(--background-color);
-}
-
-.container {    
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 20px;
-}
-
-header h1 {
-    color: var(--main-theme-color);
-}
-
-.create-back-btn {
-    font-weight: 600;
-
-    padding: 10px 15px;
-    border-radius: 10px;
-
-    background-color: white;
-    color: black;
-
-    transition: all ease 0.2s;
-
-    &:hover {
-        opacity: 75%;
-    }
-}
-
-a {
-    text-decoration: none;
-}
-
-
 /* HOME PAGE */
 
 .home-main {
@@ -206,6 +125,22 @@ a {
     font-size: 16px;
 
     margin-top: 5px;
+}
+
+.post-content-text.short {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more-btn {
+    border: none;
+    background-color: transparent;
+
+    font-weight: 700;
+
+    margin-top: 10px;
 }
 
 .post-create-container h2 {
