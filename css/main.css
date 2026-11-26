@@ -7,6 +7,7 @@
     --main-theme-color: #00da78;
     --background-color: #151515;
     --container-color: #202020;
+    --footer-color: #1a1a1a;
 }
 
 /* ALL PAGES */
@@ -42,7 +43,7 @@ body, html {
 }
 
 .container {    
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -76,4 +77,22 @@ header h1 {
 
 a {
     text-decoration: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    max-width: 100%;
+    margin-top: 30%;
+
+    padding: 40px;
+
+    background-color: var(--footer-color);
+}
+
+footer h5 {
+    text-align: center;
+    font-weight: 300;
+
 }

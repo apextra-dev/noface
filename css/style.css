@@ -6,7 +6,7 @@
 }
 
 .post-list {
-    width: 75%;
+    width: 70%;
     margin-top: 50px;
 }
 
@@ -152,6 +152,12 @@
     font-weight: 700;
 
     margin-top: 10px;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+        opacity: 75%;
+    }
 }
 
 .post-create-container h2 {

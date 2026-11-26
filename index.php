@@ -45,6 +45,9 @@
             </section>
         </main>
     </div>
+    <footer>
+        <h5>© Noface 2026 | Анонимный форум</h5>
+    </footer>
     <script src="./js/index.js"></script>
 </body>
 </html>
