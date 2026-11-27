@@ -1,8 +1,4 @@
-// let likeBtn = document.querySelector('.post-like');
-
-// likeBtn.addEventListener('click', () => {
-//     likeBtn.classList.toggle('liked');
-// });
+let shareBtn = document.querySelector('.share-post');
 
 document.querySelectorAll('.post-container').forEach(post => {
     const text = post.querySelector('.post-content-text');

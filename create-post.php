@@ -15,7 +15,7 @@
             <a class="create-back-btn" href="index.php">Назад</a>
         </header>
         <main class="create-post-main">
-            <form class="post-create-container" method="POST" action="./db/send_post.php">
+            <form class="post-create-container" method="POST" action="./posts/send_post.php">
                 <h2>Создайте пост</h2>
 
                 <label for="post-top">Заголовок поста</label>
