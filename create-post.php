@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
     <link rel="shortcut icon" href="./assets/images/favicon/favicon.svg" type="image/x-icon">
     <title>Noface - Создать пост</title>
 </head>

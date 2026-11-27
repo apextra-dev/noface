@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./assets/images/favicon/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
     <title>Noface - Полностью анонимный форум</title>
 </head>
 <body>
@@ -26,14 +27,15 @@
                             <div class="post-header">
                                 <div>
                                     <p><?= date("d.m.y", strtotime($row['created_at'])) ?></p>
-                                        <a href="post.php?id=<?= $row['id'] ?>" class="post-main-link"><h3><?= nl2br(htmlspecialchars($row['post_topic'], ENT_QUOTES, 'UTF-8')) ?></h3></a>
-                                    </div>
-                                    <div>
-                                        <button class="share-post">
-                                            <img src="./assets/images/home/post/share_img.svg" alt="Поделиться">
-                                        </button>
-                                    </div>
+                                    <a href="post.php?id=<?= $row['id'] ?>" class="post-main-link"><h3><?= nl2br(htmlspecialchars($row['post_topic'], ENT_QUOTES, 'UTF-8')) ?></h3></a>
                                 </div>
+                                <div class="share-post-block">
+                                    <button type="button" class="share-post" data-post-id="<?= $row['id'] ?>" data-post-title="<?= htmlspecialchars($row['post_topic'], ENT_QUOTES, 'UTF-8') ?>">
+                                        <img src="./assets/images/home/post/share_img.svg" alt="Поделиться">
+                                    </button>
+                                    <span class="share-text">Поделиться</span>
+                                </div>
+                            </div>
                                 <h4 class="post-content-text"><?= nl2br(htmlspecialchars($row['post_content'], ENT_QUOTES, 'UTF-8'))?></h4>
                             <button class="read-more-btn" style="display: none;">Читать дальше...</button>
                         </article>
@@ -48,5 +50,6 @@
         <h5>© Noface 2026 | Полностью анонимный форум</h5>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/share_script.js"></script>
 </body>
 </html>

@@ -1,0 +1,128 @@
+.post-content-text,
+.post-window-topic,
+.post-window-content {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+@media (max-width: 1024px) {
+    .post-list,
+    .post-create-container {
+        width: 75%;
+    }
+
+    .post-window {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-list {
+        width: 92%;
+        margin-top: 20px;
+    }
+
+    .post-container {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 16px;
+        padding-bottom: 20px;
+        border-radius: 16px;
+        box-shadow: 0px 8px 25px -10px #00da784d;
+    }
+
+    .post-header {
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .post-header h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .share-post,
+    .share-post img {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+
+    .create-post-main {
+        margin-top: 20px;
+    }
+
+    .post-create-container {
+        width: 92%;
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+    .post-create-container h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .post-top,
+    .post-text {
+        font-size: 16px;
+        border-radius: 14px;
+    }
+
+    .post-text {
+        min-height: 150px;
+    }
+
+    .post-create-container button {
+        margin-top: 25px;
+        padding: 12px 15px;
+    }
+
+    .post-window-main {
+        margin-top: 20px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .post-window {
+        max-width: 100%;
+    }
+
+    .post-window-header {
+        width: 100%;
+        align-items: center;
+        gap: 12px;
+        padding-bottom: 14px;
+        margin-bottom: 18px;
+        border-bottom: 1px solid var(--button-color);
+    }
+
+    .post-window-date {
+        font-size: 13px;
+    }
+
+    .post-window-header div:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        font-size: 11px;
+        font-weight: 500;
+        color: #a9a9a9;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .post-window-header .share-post,
+    .post-window-header .share-post img {
+        width: 38px;
+        height: 38px;
+        border-radius: 11px;
+    }
+
+    .post-window-topic {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+}
